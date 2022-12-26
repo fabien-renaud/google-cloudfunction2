@@ -10,7 +10,7 @@
 
 ```tf
 module "cloudfunction" {
-  source      = "https://github.com/fabien-renaud/google-cloudfunction2"
+  source      = "github.com/fabien-renaud/google-cloudfunction2"
   name        = "hello-world"
   project     = "hello-world"
   location    = "europe-west1"
