@@ -1,4 +1,5 @@
 resource "google_service_account" "main" {
+  project      = var.project
   account_id   = "sa-${var.account_id}"
   display_name = "sa-${var.account_id}"
   description  = "Service Account for ${var.name}"

@@ -7,6 +7,7 @@ data "archive_file" "main" {
 
 resource "google_storage_bucket" "main" {
   name                        = "${var.project}-${var.name}-source"
+  project                     = var.project
   location                    = var.location
   uniform_bucket_level_access = true
 }
